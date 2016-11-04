@@ -19,7 +19,7 @@ install:
   - echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter extra-google-m2repository
 
 build_script:
-  - gradlew.bat clean testDebug jacocoDebugReport -Dscan --configure-on-demand --parallel --stacktrace
+  - gradlew.bat assembleDebug
 
 artifacts:
   - path: "build\\reports\\"
