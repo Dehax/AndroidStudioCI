@@ -22,7 +22,7 @@ build_script:
   - gradlew.bat assembleDebug
 
 artifacts:
-  - path: "build\\reports\\"
+  - path: "app\\build\\outputs\\apk"
 
 cache:
   - "%USERPROFILE%\\.m2"
